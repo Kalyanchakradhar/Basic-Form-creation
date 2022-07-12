@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+         border: 1px solid #111;
+        width: 450px;
+       padding: 20px;
+      border-radius: 20px;
+        margin: 0 auto;
+        position: absolute;
+       top: 150px;
+        right: 412px;
+        background-color: cornsilk;  
+      }
+      video {
+        height: "100%";
+        width: "100%";
+        position: relative;
+      }
+      div {
+         padding: 10px; 
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      src="./pexels videos 1580455.mp4"
+      autoplay
+      loop
+      height="100%"
+      width="100%"
+    ></video>
+    <form action="./app.js" method="POST">
+      <!-------Html 5 form validation-->
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter the username"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email"
+        id="email"
+        name="useremail"
+        placeholder="Enter the userEmail"
+        required
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="4"
+          maxlength="6"
+          required
+          placeholder="Enter the password"
+        />
+      </div>
+      <div>
+        <label for="Uploadphoto">Upload photo</label>
+        <input type="file" name="photo" id="UploadPhoto" />
+      </div>
+      <div>
+        <label for="gender">radio button</label>
+        <input type="radio" id="gender" name="gender" />Male
+        <input type="radio" id="gender" name="gender" />female
+      </div>
+      <div>
+        <label for="skills">Skills</label>
+        <input type="checkbox" name="skills" id="skills" value="Java" />Java
+        <input
+          type="checkbox"
+          name="skills"
+          id="skills"
+          value="Reactjs"
+        />Reactjs
+        <input type="checkbox" name="skills" id="skills" value="Nodejs" />Nodejs
+        <input
+          type="checkbox"
+          name="skills"
+          id="skills"
+          value="Expressjs"
+        
+        />Expressjs
+        <input
+          type="checkbox"
+          name="skills"
+          id="skills"
+          value="Springboot"
+        />Springboot
+      </div>
+      <div>
+        <label for="Time">Time with date</label>
+        <input type="datetime-local" id="Time" />
+      </div>
+      <div>
+        <label for="website">website link</label>
+        <input type="url" name="searchwebsite" id="searchwebsite" />
+      </div>
+      <div>
+        <label for="text-block">Comments</label><textarea name="comments" id="text-block" cols="0" rows="5"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
